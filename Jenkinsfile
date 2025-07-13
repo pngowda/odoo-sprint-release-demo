@@ -97,14 +97,6 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Package all custom modules into a tarball for deployment
-                sh 'tar czf release.tar.gz ${MODULES}'
-                archiveArtifacts artifacts: 'release.tar.gz', fingerprint: true // Archive and fingerprint release artifact
-            }
-        }
-
-        stage('Build') {
-            steps {
                 script {
                     def gitHash = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
                     // Build a unique artifact name for traceability
