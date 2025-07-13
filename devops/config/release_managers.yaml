@@ -1,0 +1,7 @@
+eligible_owners:
+  - email: "user1.productowner@example.com"
+    user_id: "user1"
+  - email: "user2.productowner@example.com"
+    user_id: "user2"
+  - email: "user3.productowner@example.com"
+    user_id: "user3"
