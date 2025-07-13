@@ -190,6 +190,7 @@ flowchart TD
 - Is the current level of automated testing sufficient to catch regressions? How is UAT handled (fully automated, partially manual)?
 - Is the current level of monitoring and alerting enough, or do we need deeper observability (logs, traces, KPI metrics)?
 - Do we need a more robust plan for disaster recovery and regular backup testing?
+- Are there compliance or audit requirements for release traceability and change management?
 
 ---
 
@@ -202,6 +203,7 @@ flowchart TD
 - Improve observability across the stack:
   - **Logging:** Centralize logs using the ELK stack, Loki, or something similar.
   - **Metrics:** Collect and visualize metrics with Checkmk, Prometheus, and Grafana.
+  - **Tests KPI'S** Test report visualization of release cadense.
   - **Alerting:** Set up automated notifications for failures and anomalies to catch issues early.
   - **Tracing:** Implement distributed tracing with Jaeger or OpenTelemetry for better insight into request flow and bottlenecks.
 

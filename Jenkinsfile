@@ -150,9 +150,10 @@ pipeline {
         stage('Integration Tests on Dev') {
             when { branch 'development' } // Only run this stage on 'development' branch
             steps {
-                    // Place holder to run automated Integration and Regression tests.
-                    // Invoke your Integration test suite here
+                // Place holder to run automated Integration and Regression tests.
+                // Invoke your Integration test suite here
             }
+            archiveArtifacts artifacts: '**/integration-test-report/**', allowEmptyArchive: true
         }
 
         stage('Deploy to Staging') {
