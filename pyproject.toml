@@ -1,0 +1,26 @@
+[project]
+name = "odoo-sprint-release"
+version = "0.1.0"
+description = "Odoo deployment project using uv and pyproject.toml"
+authors = [
+    { name = "user", email = "user@email.com" }
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "odoo==16.0.20230711",   # Pin to your Odoo version or use a source reference if needed
+    "pytest",
+    "black",
+    "flake8",
+    "mypy"
+]
+
+[tool.uv]
+# Optional: uv-specific settings go here
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88

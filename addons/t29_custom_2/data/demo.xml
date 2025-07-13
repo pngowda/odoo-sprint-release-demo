@@ -1,0 +1,6 @@
+<odoo>
+    <record id="demo_t29_custom_2_model" model="t29_custom_2.model">
+        <field name="name">Demo T29 Custom 2 Record</field>
+        <field name="custom_1_ref" ref="t29_custom_1.demo_t29_custom_1_model"/>
+    </record>
+</odoo>
